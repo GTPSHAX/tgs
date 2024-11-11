@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+a div {
+    transition: all .3s;
+}
+a:hover > div {
+    transform: scale(0.9);
+    transition: all .3s;
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    background: #1A1A19; 
+    /* #1A1A1D; */
+    color: #fefefe;
+}
+
+body {
+    position: relative;
+}
+
+header {
+    padding: 20px 40px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+}
+.logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.logo {
+    width: 30px;
+    height: 30px;
+    background-color: #fefefe;
+}
+header > div:nth-child(2) > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    /* padding: 5px 20px;
+    background: #f24b21;
+    border-radius: 25px; */
+}
+header > div:nth-child(2) > ul > li {
+    opacity: 0.7;
+}
+header > div:not(:first-of-type) {
+    color: #fefefe;
+}
+header > div:last-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.wave-wrapper {
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    overflow: hidden;
+    z-index: -1;
+    height: 100vh;
+}
+.wave {
+    position: relative;
+    top: -2px;
+    left: 0px;
+    height: 100vh;
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1618 380" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(242,75,33,255)" d="M 0 0 C 496.79999999999995 0 331.20000000000005 205 828 205 L 828 205 L 828 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(242,75,33,255)" d="M 827 205 C 1301.6 205 1143.4 380 1618 380 L 1618 380 L 1618 0 L 827 0 Z" stroke-width="0"></path> </svg>');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#home {
+    padding: 20px 40px;
+    height: calc(100vh - 70px);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box !important;
+    color: #fefefe;
+    gap: 20px;
+}
+
+#home > img {
+    max-width: 450px;
+}
+
+.invert {
+    backdrop-filter: invert(1);
+}
+/* @media (max-width:1617px) {
+    .wave {
+        background-size: contain;
+    }
+}
+@media (min-width:1618px) {
+    .wave {
+        height: 500px;
+    }
+} */
